@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>GPS RUN TRACKER </title>
+		<style type= "text/css">
+			body{
+				background-image: url("images/running.png");
+				background-size: cover;
+				background-repeat: no-repeat;
+				color: white;
+				}
+
+			
+		</style>
+		
+			<script language="JavaScript">
+
+				function loadPage(list) {
+
+				location.href=list.options[list.selectedIndex].value
+
+				}
+				
+				
+			</script>
+
+		
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+
+			var mp3snd = "sounds/Nike.mp3";
+			var oggsnd = "Nike.ogg";
+
+			document.write('<audio autoplay="autoplay">');
+			document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
+			document.write('<source src="'+oggsnd+'" type="audio/ogg">');
+			document.write('<!--[if lt IE 9]>');
+			document.write('<bgsound src="'+mp3snd+'" loop="1">');
+			document.write('<![endif]-->');
+			document.write('</audio>');
+
+//-->
+</script>
+		</script>
+		
+		<center>
+		<h1>GPS RUN TRACKER </h1>
+
+	
+		<h2>PLEASE PICK THE PLACE YOU WANT TO RUN</h2>
+		<br>
+
+		
+		<form>
+		<select name="file" size="1"
+			onchange="loadPage(this.form.elements[0])"
+			target="_parent._top"
+			onmouseclick="this.focus()"
+			style="background-color:#ffffff">
+
+			<option value>Select Place</option>
+			<option value> </option>
+			<option value="marikina.html">MARIKINA SPORT COMPLEX</option>
+			<option value="luneta.html">LUNETA</option>
+			<option value="qccircle.html">Q.C CIRCLE</option>
+			<option value="ue.html">UE CALOOCAN</option>
+		  
+		</select>
+		</form>
+
+
+           
+         
+		</center>
+	</body>
+</html>
